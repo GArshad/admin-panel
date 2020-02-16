@@ -1,0 +1,17 @@
+:root {
+  --line-chart-width: 320px;
+  --line-chart-height: 250px;
+}
+
+.chart-wrapper {
+  width: var(--line-chart-width);
+  min-width: var(--line-chart-width);
+  max-width: var(--line-chart-width);
+  height: var(--line-chart-height);
+  min-height: var(--line-chart-height);
+  max-height: var(--line-chart-height);
+  color:red;
+  background-color: white;
+  border-radius: 10px;
+  background-attachment: fixed;
+}

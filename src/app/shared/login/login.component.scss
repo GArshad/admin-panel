@@ -1,0 +1,27 @@
+.logo{
+  width: 150px;
+}
+
+.login{
+  background-image: url(../../../assets/images/Altrium-Log-in-Back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-card{
+  max-width: 500px;
+}
+
+.padding-right{
+  padding-right: 10rem;
+}
+
+@media (max-width: 599px){
+  .padding-right{
+    padding-right: 0;
+    margin: auto;
+  }
+  .logo{
+    width: 100px;
+  }
+}

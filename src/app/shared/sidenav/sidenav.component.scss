@@ -1,0 +1,64 @@
+.side-nav{
+  width: 14rem;
+  height: 100vh;
+}
+
+.navbar-nav{
+  position: fixed;
+}
+
+.sidenav-img{
+  width: 40px;
+  height: 40px;
+}
+.sidebar-brand-subtitle{
+  color: rgba(0, 0, 0, 0.863);
+  font-size: 0.8rem;
+}
+
+.sidebar .nav-item .nav-link span {
+  font-size: 1.2rem;
+  padding-left: 0.2rem;
+}
+
+.sidebar .nav-item .nav-link i{
+  font-size: 1.2rem;
+}
+
+.active{
+  border-left: 5px solid #1cc88a;
+  background-color: #fff;
+  color: #1cc88a !important;
+}
+
+.sidebar-light .nav-item.active .nav-link{
+  color: #1cc88a !important;
+}
+
+.sidebar-light .nav-item.active .nav-link i{
+  color: #1cc88a !important;
+}
+
+@media (max-width: 768px){
+  .sidebar .nav-item .nav-link span {
+    font-size: small;
+  }
+
+  .sidebar.toggled .nav-item .nav-link span {
+    font-size: small;
+  }
+
+  .sidebar-brand{
+    flex-direction: column;
+  }
+
+  .side-nav{
+    width: 6.5rem;
+    height: 100%;
+  }
+
+  .navbar-nav{
+    position: initial;
+    height: 100%;
+  }
+}

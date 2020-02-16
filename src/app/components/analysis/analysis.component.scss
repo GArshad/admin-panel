@@ -1,0 +1,56 @@
+.logo{
+  width: 100px;
+}
+
+.card{
+  margin: 2rem 0;
+  border: 3px solid #89e2c2 !important;
+  border-radius: 7px !important;
+}
+
+.card-header{
+  background-color: #fff;
+  border-bottom: none;
+}
+
+.list{
+  list-style: none;
+}
+
+.dropdown-item {
+  padding: 0.25rem 0.25rem !important;
+}
+
+hr{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-top: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+.custom-hr{
+  margin: 0 2rem;
+  border-top: 3px solid rgba(0, 0, 0, 0.2);
+}
+
+.card-scroll{
+  height: 140px;
+  overflow-y: auto;
+  scrollbar-color: #6969dd #e0e0e0;
+  scrollbar-width: thin;
+}
+
+.card-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.card-scroll::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #858796;
+  border-radius: 100px;
+}
+
+@media (max-width: 599px){
+  .logo{
+    width: 90px;
+  }
+}

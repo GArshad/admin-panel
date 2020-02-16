@@ -1,0 +1,44 @@
+<!--
+  - Header Component
+  - @author    AppsPlaces <appsplaces@gmail.com>
+  - @copyright Copyright (c) 2021
+  - @license   AppsPlaces
+-->
+
+<!-- Topbar -->
+<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+  <!-- Topbar Navbar -->
+  <ul class="navbar-nav">
+    <li class="nav-item dropdown no-arrow toggle-button text-success">
+      <a class="dropdown-item" (click)="toggleSidebar()"><i class="bi bi-text-left"></i></a>
+    </li>
+    <li class="nav-item dropdown no-arrow">
+      <a class="dropdown-item">
+        <img class="logo" src="../../../assets/images/Altrium_4x-8.png" alt="brand-logo">
+      </a>
+    </li>
+  </ul>
+  <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown no-arrow">
+        <a class="dropdown-item">
+          <i class="bi bi-bell"></i>
+        </a>
+      </li>
+      <li class="nav-item dropdown no-arrow">
+        <a class="dropdown-item">
+          <i class="bi bi-gear"></i>
+        </a>
+      </li>
+      <li class="nav-item dropdown no-arrow">
+        <a class="dropdown-item">
+          <img style="width: 40px; height: 40px" src="../../../assets/images/head.png" alt="profile-img">
+        </a>
+      </li>
+      <li class="nav-item dropdown no-arrow">
+          <a class="dropdown-item" (click)="logout()">
+              <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+              Logout
+          </a>
+      </li>
+  </ul>
+</nav>

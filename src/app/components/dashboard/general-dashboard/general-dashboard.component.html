@@ -1,0 +1,195 @@
+<div class="general-dashboard-wrapper">
+  <!--Header-->
+  <div class="form-inline">
+    <img style="width: 100px;" src="../../../../assets/images/Altrium_4x-8.png" alt="logo">
+    <h4 class="ml-3"><strong style="font-size: 2rem;">|</strong> General Dashboard</h4>
+    <div class="button ml-auto mr-3">
+      <button class="btn btn-light">Clear</button>
+    </div>
+  </div>
+  <hr>
+  <!--First Row-->
+  <div class="row">
+    <!--Left Div-->
+    <div class="col-lg-8">
+      <div class="card">
+        <div class="card-header d-flex">
+          <h6 class="mb-0">ROCE ANTES DE IMPUESTOS</h6>
+          <a class="ml-auto"><i class="bi bi-three-dots float-right"></i></a>
+        </div>
+        <div class="card-body">
+          <app-linear-chart></app-linear-chart>
+        </div>
+      </div>
+    </div>
+    <!--Right Div-->
+    <div class="col-lg-4">
+      <div class="card">
+        <div class="card-header d-flex">
+          <h6 class="mb-0 text-success">
+            Positve Tendencies
+          </h6>
+          <ul class="list ml-auto d-flex">
+            <li class="dropdown no-arrow">
+              <a class="dropdown-item text-success">
+                <i class="bi bi-plus-circle"></i>
+              </a>
+            </li>
+            <li class="dropdown no-arrow">
+              <a class="dropdown-item">
+                <i class="bi bi-three-dots"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body card-scroll">
+          <div class="item">
+            <p class="my-0 text-black"><strong>Margen sobre ventas:</strong> <span class="float-right text-success">.0014</span></p>
+            <p class="my-0 text-muted">Last update time <span class="float-right">1 h ago</span></p>
+            <hr>
+          </div>
+          <div class="item">
+            <p class="my-0 text-black"><strong>Margen sobre ventas:</strong> <span class="float-right text-success">.0014</span></p>
+            <p class="my-0 text-muted">Last update time <span class="float-right">1 h ago</span></p>
+            <hr>
+          </div>
+        </div>
+      </div>
+
+      <div class="card red">
+        <div class="card-header d-flex">
+          <h6 class="mb-0 text-danger">
+            Negative Tendencies
+          </h6>
+          <ul class="list ml-auto d-flex">
+            <li class="dropdown no-arrow">
+              <a class="dropdown-item text-danger">
+                <i class="bi bi-plus-circle"></i>
+              </a>
+            </li>
+            <li class="dropdown no-arrow">
+              <a class="dropdown-item">
+                <i class="bi bi-three-dots"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div direction="up" class="card-body card-scroll">
+          <div class="item">
+            <p class="my-0 text-black"><strong>Margen sobre ventas:</strong> <span class="float-right text-danger">.0014</span></p>
+            <p class="my-0 text-muted">Last update time <span class="float-right">1 h ago</span></p>
+            <hr>
+          </div>
+          <div class="item">
+            <p class="my-0 text-black"><strong>Margen sobre ventas:</strong> <span class="float-right text-danger">.0014</span></p>
+            <p class="my-0 text-muted">Last update time <span class="float-right">1 h ago</span></p>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--2nd row-->
+  <div class="row">
+    <!--Left div-->
+    <div class="col-lg-8">
+      <div class="row">
+        <div class="col-6">
+          <div class="card">
+            <div class="card-header d-flex">
+              <h6 class="mb-0">COSTG BASE/VENTA</h6>
+              <a class="ml-auto"><i class="bi bi-three-dots float-right"></i></a>
+            </div>
+            <div class="card-body mx-auto row-2-height">
+              <img style="width: 100%;" src="../../../../assets/images/row2-1.PNG" alt="">
+              <div class="row">
+                <div class="data-1 p-3">
+                  <h1 class="text-black" style="font-weight: bolder;">1,744</h1>
+                  <span><i class="bi bi-circle-fill mr-2 text-success"></i>Data 1</span>
+                </div>
+                <div class="data-2 p-3">
+                  <h1 class="text-black" style="font-weight: bolder;">2,312</h1>
+                  <span><i class="bi bi-circle-fill mr-2 text-info"></i>Data 2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <div class="card-header d-flex">
+              <h6 class="mb-0">BASE COST?_ASSALES</h6>
+              <a class="ml-auto"><i class="bi bi-three-dots float-right"></i></a>
+            </div>
+            <div class="card-body mx-auto row-2-height">
+              <img style="width: 100%;" src="../../../../assets/images/row2-2.PNG" alt="">
+              <div class="row">
+                <div class="data-1 p-3">
+                  <h1 class="text-black" style="font-weight: bolder;">1,744</h1>
+                  <span><i class="bi bi-circle-fill mr-2 text-success"></i>Data 1</span>
+                </div>
+                <div class="data-2 p-3">
+                  <h1 class="text-black" style="font-weight: bolder;">2,312</h1>
+                  <span><i class="bi bi-circle-fill mr-2 text-info"></i>Data 2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Right div-->
+    <div class="col-lg-4">
+      <div class="card" *ngFor="let array of array">
+        <div class="card-header d-flex">
+          <h6 class="mb-0" style="font-size: 0.8rem;">
+            VENTAS NETAS
+          </h6>
+          <ul class="list ml-auto d-flex">
+            <li class="dropdown no-arrow">
+              <a class="dropdown-item text-danger">
+                <i class="bi bi-plus-circle"></i>
+                -7.6%
+              </a>
+            </li>
+            <li class="dropdown no-arrow">
+              <a class="dropdown-item">
+                <i class="bi bi-three-dots"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body" style="padding-top: 0">
+          <strong class="text-black"><span style="font-size: 28px; font-weight: bolder;" class="mr-2 text-bold">1,428</span> MXN</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--3rd row-->
+  <div class="row">
+    <div class="col-5">
+      <div class="card">
+        <div class="card-header d-flex">
+          <h6 class="mb-0">GASTOS GENERALES ADMINISTRATIVOS</h6>
+          <a class="ml-auto"><i class="bi bi-three-dots float-right"></i></a>
+        </div>
+        <div class="card-body mx-auto" style="height: 230px;">
+          <img src="../../../../assets/images/row3-1.PNG" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="col-7">
+      <div class="card">
+        <div class="card-header d-flex">
+          <h6 class="mb-0">ARCHIVOS FLIOS VENTAS</h6>
+          <a class="ml-auto"><i class="bi bi-three-dots float-right"></i></a>
+        </div>
+        <div class="card-body mx-auto" style="height: 230px;">
+          <img src="../../../../assets/images/row3-2.PNG" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

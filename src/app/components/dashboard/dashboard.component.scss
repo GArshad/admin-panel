@@ -1,0 +1,26 @@
+.show-nav{
+  overflow: visible;
+  width: 6.5rem !important;
+  transition: width 0.2s linear;
+}
+
+.hide-nav{
+  width: 0 !important;
+  overflow: hidden;
+  transition: width 0.2s linear;
+}
+.contract-dash{
+  transform: translateX(0);
+  transition: transform 1s ease-in 1s, width 1s ease-out 1s;
+}
+.expand-dash{
+  transform: translateX(-14rem);
+  width: calc(100% + 14rem) !important;
+  transition: transform 1s ease-out 1s, width 1s ease-out 1s;
+}
+
+@media (min-width: 768px){
+  .show-nav{
+    width: 14rem !important;
+  }
+}
